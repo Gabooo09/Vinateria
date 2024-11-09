@@ -1,0 +1,166 @@
+use("vinateria");
+
+db.clientes.insertMany(
+    [
+        {
+            "id_cliente": 1,
+            "Nombre_Cliente": "Carlos",
+            "Apellido_Cliente": "Pérez",
+            "Email_Cliente": "carlos.perez@example.com",
+            "Telefono_Cliente": "5551231234",
+            "Direccion_Cliente": "Calle 123"
+        },
+        {
+            "id_cliente": 2,
+            "Nombre_Cliente": "Ana",
+            "Apellido_Cliente": "García",
+            "Email_Cliente": "ana.garcia@example.com",
+            "Telefono_Cliente": "5552342345",
+            "Direccion_Cliente": "Avenida 456"
+        },
+        {
+            "id_cliente": 3,
+            "Nombre_Cliente": "Luis",
+            "Apellido_Cliente": "Martínez",
+            "Email_Cliente": "luis.martinez@example.com",
+            "Telefono_Cliente": "5553453456",
+            "Direccion_Cliente": "Boulevard 789"
+        },
+        {
+            "id_cliente": 4,
+            "Nombre_Cliente": "María",
+            "Apellido_Cliente": "López",
+            "Email_Cliente": "maria.lopez@example.com",
+            "Telefono_Cliente": "5554564567",
+            "Direccion_Cliente": "Callejón 321"
+        },
+        {
+            "id_cliente": 5,
+            "Nombre_Cliente": "Juan",
+            "Apellido_Cliente": "Gómez",
+            "Email_Cliente": "juan.gomez@example.com",
+            "Telefono_Cliente": "5555675678",
+            "Direccion_Cliente": "Plaza 654"
+        },
+        {
+            "id_cliente": 6,
+            "Nombre_Cliente": "Carmen",
+            "Apellido_Cliente": "Sánchez",
+            "Email_Cliente": "carmen.sanchez@example.com",
+            "Telefono_Cliente": "5556786789",
+            "Direccion_Cliente": "Avenida Norte 987"
+        },
+        {
+            "id_cliente": 7,
+            "Nombre_Cliente": "José",
+            "Apellido_Cliente": "Torres",
+            "Email_Cliente": "jose.torres@example.com",
+            "Telefono_Cliente": "5557897890",
+            "Direccion_Cliente": "Calle Sur 159"
+        },
+        {
+            "id_cliente": 8,
+            "Nombre_Cliente": "Laura",
+            "Apellido_Cliente": "Ramírez",
+            "Email_Cliente": "laura.ramirez@example.com",
+            "Telefono_Cliente": "5558908901",
+            "Direccion_Cliente": "Paseo 258"
+        },
+        {
+            "id_cliente": 9,
+            "Nombre_Cliente": "Andrés",
+            "Apellido_Cliente": "Jiménez",
+            "Email_Cliente": "andres.jimenez@example.com",
+            "Telefono_Cliente": "5559019012",
+            "Direccion_Cliente": "Boulevard Este 357"
+        },
+        {
+            "id_cliente": 10,
+            "Nombre_Cliente": "Sandra",
+            "Apellido_Cliente": "Morales",
+            "Email_Cliente": "sandra.morales@example.com",
+            "Telefono_Cliente": "5550120123",
+            "Direccion_Cliente": "Avenida Oeste 456"
+        },
+        {
+            "id_cliente": 11,
+            "Nombre_Cliente": "Beatriz",
+            "Apellido_Cliente": "Hernández",
+            "Email_Cliente": "beatriz.hernandez@example.com",
+            "Telefono_Cliente": "5551231123",
+            "Direccion_Cliente": "Calle Nueva 789"
+        },
+        {
+            "id_cliente": 12,
+            "Nombre_Cliente": "Pablo",
+            "Apellido_Cliente": "Vázquez",
+            "Email_Cliente": "pablo.vazquez@example.com",
+            "Telefono_Cliente": "5552231234",
+            "Direccion_Cliente": "Calle Vieja 321"
+        },
+        {
+            "id_cliente": 13,
+            "Nombre_Cliente": "Diana",
+            "Apellido_Cliente": "Ruiz",
+            "Email_Cliente": "diana.ruiz@example.com",
+            "Telefono_Cliente": "5553342345",
+            "Direccion_Cliente": "Avenida Central 654"
+        },
+        {
+            "id_cliente": 14,
+            "Nombre_Cliente": "Fernando",
+            "Apellido_Cliente": "Herrera",
+            "Email_Cliente": "fernando.herrera@example.com",
+            "Telefono_Cliente": "5554453456",
+            "Direccion_Cliente": "Boulevard Central 987"
+        },
+        {
+            "id_cliente": 15,
+            "Nombre_Cliente": "Raquel",
+            "Apellido_Cliente": "Castro",
+            "Email_Cliente": "raquel.castro@example.com",
+            "Telefono_Cliente": "5555564567",
+            "Direccion_Cliente": "Paseo Norte 159"
+        },
+        {
+            "id_cliente": 16,
+            "Nombre_Cliente": "Ricardo",
+            "Apellido_Cliente": "Cruz",
+            "Email_Cliente": "ricardo.cruz@example.com",
+            "Telefono_Cliente": "5556675678",
+            "Direccion_Cliente": "Plaza Sur 258"
+        },
+        {
+            "id_cliente": 17,
+            "Nombre_Cliente": "Angela",
+            "Apellido_Cliente": "Navarro",
+            "Email_Cliente": "angela.navarro@example.com",
+            "Telefono_Cliente": "5557786789",
+            "Direccion_Cliente": "Calle Este 357"
+        },
+        {
+            "id_cliente": 18,
+            "Nombre_Cliente": "Felipe",
+            "Apellido_Cliente": "Ortega",
+            "Email_Cliente": "felipe.ortega@example.com",
+            "Telefono_Cliente": "5558897890",
+            "Direccion_Cliente": "Avenida Oeste 456"
+        },
+        {
+            "id_cliente": 19,
+            "Nombre_Cliente": "Adriana",
+            "Apellido_Cliente": "Silva",
+            "Email_Cliente": "adriana.silva@example.com",
+            "Telefono_Cliente": "5559908901",
+            "Direccion_Cliente": "Paseo Principal 123"
+        },
+        {
+            "id_cliente": 20,
+            "Nombre_Cliente": "Miguel",
+            "Apellido_Cliente": "Reyes",
+            "Email_Cliente": "miguel.reyes@example.com",
+            "Telefono_Cliente": "5551011012",
+            "Direccion_Cliente": "Boulevard Principal 456"
+        }
+    ]
+)

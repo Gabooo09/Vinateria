@@ -1,0 +1,167 @@
+
+use("vinateria");
+
+db.empleados.insertMany(
+    [
+        {
+            "id_empleado": 1,
+            "nombre_empleado": "Carlos",
+            "apellido_empleado": "Gómez",
+            "telefono": "555-1234",
+            "direccion": "Calle Falsa 123, Ciudad A",
+            "puesto": "Gerente de Ventas"
+        },
+        {
+            "id_empleado": 2,
+            "nombre_empleado": "María",
+            "apellido_empleado": "López",
+            "telefono": "555-5678",
+            "direccion": "Av. Siempreviva 742, Ciudad B",
+            "puesto": "Asistente Administrativa"
+        },
+        {
+            "id_empleado": 3,
+            "nombre_empleado": "Juan",
+            "apellido_empleado": "Pérez",
+            "telefono": "555-8765",
+            "direccion": "Calle Luna 456, Ciudad C",
+            "puesto": "Desarrollador de Software"
+        },
+        {
+            "id_empleado": 4,
+            "nombre_empleado": "Ana",
+            "apellido_empleado": "Ramírez",
+            "telefono": "555-2345",
+            "direccion": "Av. Sol 789, Ciudad D",
+            "puesto": "Contadora"
+        },
+        {
+            "id_empleado": 5,
+            "nombre_empleado": "Luis",
+            "apellido_empleado": "Martínez",
+            "telefono": "555-3456",
+            "direccion": "Calle Estrella 101, Ciudad E",
+            "puesto": "Jefe de Recursos Humanos"
+        },
+        {
+            "id_empleado": 6,
+            "nombre_empleado": "Sofía",
+            "apellido_empleado": "Hernández",
+            "telefono": "555-4567",
+            "direccion": "Calle Aurora 202, Ciudad F",
+            "puesto": "Diseñadora Gráfica"
+        },
+        {
+            "id_empleado": 7,
+            "nombre_empleado": "José",
+            "apellido_empleado": "Torres",
+            "telefono": "555-9876",
+            "direccion": "Av. Norte 303, Ciudad G",
+            "puesto": "Analista de Datos"
+        },
+        {
+            "id_empleado": 8,
+            "nombre_empleado": "Laura",
+            "apellido_empleado": "Morales",
+            "telefono": "555-6789",
+            "direccion": "Calle Sur 404, Ciudad H",
+            "puesto": "Recepcionista"
+        },
+        {
+            "id_empleado": 9,
+            "nombre_empleado": "Miguel",
+            "apellido_empleado": "Sánchez",
+            "telefono": "555-7890",
+            "direccion": "Calle Este 505, Ciudad I",
+            "puesto": "Desarrollador Web"
+        },
+        {
+            "id_empleado": 10,
+            "nombre_empleado": "Gabriela",
+            "apellido_empleado": "Castro",
+            "telefono": "555-8901",
+            "direccion": "Av. Oeste 606, Ciudad J",
+            "puesto": "Gerente de Proyectos"
+        },
+        {
+            "id_empleado": 11,
+            "nombre_empleado": "David",
+            "apellido_empleado": "Rojas",
+            "telefono": "555-9012",
+            "direccion": "Calle Central 707, Ciudad K",
+            "puesto": "Soporte Técnico"
+        },
+        {
+            "id_empleado": 12,
+            "nombre_empleado": "Lucía",
+            "apellido_empleado": "Díaz",
+            "telefono": "555-0123",
+            "direccion": "Calle Norte 808, Ciudad L",
+            "puesto": "Coordinadora de Marketing"
+        },
+        {
+            "id_empleado": 13,
+            "nombre_empleado": "Pedro",
+            "apellido_empleado": "Jiménez",
+            "telefono": "555-3457",
+            "direccion": "Av. Sur 909, Ciudad M",
+            "puesto": "Ingeniero de Sistemas"
+        },
+        {
+            "id_empleado": 14,
+            "nombre_empleado": "Elena",
+            "apellido_empleado": "Vega",
+            "telefono": "555-2346",
+            "direccion": "Calle Primavera 1010, Ciudad N",
+            "puesto": "Secretaria"
+        },
+        {
+            "id_empleado": 15,
+            "nombre_empleado": "Ricardo",
+            "apellido_empleado": "Ortega",
+            "telefono": "555-5679",
+            "direccion": "Av. Verano 111, Ciudad O",
+            "puesto": "Desarrollador Backend"
+        },
+        {
+            "id_empleado": 16,
+            "nombre_empleado": "Camila",
+            "apellido_empleado": "Navarro",
+            "telefono": "555-6780",
+            "direccion": "Calle Otoño 212, Ciudad P",
+            "puesto": "Analista Financiera"
+        },
+        {
+            "id_empleado": 17,
+            "nombre_empleado": "Fernando",
+            "apellido_empleado": "Reyes",
+            "telefono": "555-7891",
+            "direccion": "Av. Invierno 313, Ciudad Q",
+            "puesto": "Jefe de Operaciones"
+        },
+        {
+            "id_empleado": 18,
+            "nombre_empleado": "Andrea",
+            "apellido_empleado": "Flores",
+            "telefono": "555-8902",
+            "direccion": "Calle Primavera 414, Ciudad R",
+            "puesto": "Analista de Negocios"
+        },
+        {
+            "id_empleado": 19,
+            "nombre_empleado": "Pablo",
+            "apellido_empleado": "Mendoza",
+            "telefono": "555-9013",
+            "direccion": "Calle Verano 515, Ciudad S",
+            "puesto": "Programador Móvil"
+        },
+        {
+            "id_empleado": 20,
+            "nombre_empleado": "Natalia",
+            "apellido_empleado": "Cruz",
+            "telefono": "555-0124",
+            "direccion": "Av. Otoño 616, Ciudad T",
+            "puesto": "Especialista en Ventas"
+        }
+    ]
+)

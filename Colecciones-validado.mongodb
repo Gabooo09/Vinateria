@@ -1,0 +1,238 @@
+use("vinateria");
+
+// Colección productos
+db.createCollection('productos', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validacion de productos',
+            required: ['id_producto', 'Nombre_Producto', 'Descripcion', 'Precio'],
+            properties: {
+                id_producto: { bsonType: 'int', minimum: 1, description: 'ID Producto, debe ser un número positivo' },
+                Nombre_Producto: { bsonType: 'string', minLength: 1, maxLength: 100, description: 'Nombre de producto' },
+                Descripcion: { bsonType: 'string', minLength: 1, maxLength: 500, description: 'Descripción de producto' },
+                Precio: { bsonType: 'decimal', minimum: 0.01, description: 'Precio de producto' },
+                tipos_productos: {
+                    bsonType: 'object',
+                    required: ['tipo'],
+                    properties: {
+                        tipo: { bsonType: 'string', minLength: 1, maxLength: 50, description: 'Tipo de producto' }
+                    }
+                },
+                inventarios: {
+                    bsonType: 'object',
+                    required: ['cantidad_disponible', 'fecha_actualizacion'],
+                    properties: {
+                        cantidad_disponible: { bsonType: 'int', minimum: 0, description: 'Cantidad disponible, debe ser no negativa' },
+                        fecha_actualizacion: { bsonType: 'date', description: 'Fecha de actualización' }
+                    }
+                }
+            }
+        }
+    }
+});
+
+// Colección proveedores
+db.createCollection('proveedores', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validacion de proveedores',
+            required: ['id_proveedor', 'Nombre_Proveedor', 'Contacto_Proveedor', 'Direccion_Proveedor', 'Telefono_Proveedor'],
+            properties: {
+                id_proveedor: { bsonType: 'int', minimum: 1, description: 'ID Proveedor' },
+                Nombre_Proveedor: { bsonType: 'string', minLength: 1, maxLength: 100, description: 'Nombre de proveedor' },
+                Contacto_Proveedor: { bsonType: 'string', minLength: 1, maxLength: 100, description: 'Contacto de proveedor' },
+                Direccion_Proveedor: { bsonType: 'string', minLength: 1, maxLength: 200, description: 'Direccion de proveedor' },
+                Telefono_Proveedor: { bsonType: 'string', pattern: '^[0-9]{10}$', description: 'Telefono de proveedor (10 dígitos)' },
+                proveedores_productos: {
+                    bsonType: 'object',
+                    required: ['id_producto', 'Precio_Costo', 'Fecha_Compra'],
+                    properties: {
+                        id_producto: { bsonType: 'int', minimum: 1, description: 'ID Producto' },
+                        Precio_Costo: { bsonType: 'decimal', minimum: 0.01, description: 'Precio de costo' },
+                        Fecha_Compra: { bsonType: 'date', description: 'Fecha de compra' }
+                    }
+                }
+            }
+        }
+    }
+});
+
+// Colección clientes
+db.createCollection('clientes', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validacion de clientes',
+            required: ['id_cliente', 'Nombre_Cliente', 'Apellido_Cliente', 'Email_Cliente', 'Telefono_Cliente', 'Direccion_Cliente'],
+            properties: {
+                id_cliente: { bsonType: 'int', minimum: 1, description: 'ID Cliente' },
+                Nombre_Cliente: { bsonType: 'string', minLength: 1, maxLength: 50, description: 'Nombre del cliente' },
+                Apellido_Cliente: { bsonType: 'string', minLength: 1, maxLength: 50, description: 'Apellido del cliente' },
+                Email_Cliente: { bsonType: 'string', pattern: '^\\S+@\\S+\\.\\S+$', description: 'Email del cliente' },
+                Telefono_Cliente: { bsonType: 'string', pattern: '^[0-9]{10}$', description: 'Telefono del cliente (10 dígitos)' },
+                Direccion_Cliente: { bsonType: 'string', minLength: 1, maxLength: 200, description: 'Direccion del cliente' }
+            }
+        }
+    }
+});
+
+// Colección empleados
+db.createCollection('empleados', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validacion de empleados',
+            required: ['id_empleado', 'nombre_empleado', 'apellido_empleado', 'telefono', 'direccion', 'puesto'],
+            properties: {
+                id_empleado: { bsonType: 'int', minimum: 1, description: 'ID Empleado' },
+                nombre_empleado: { bsonType: 'string', minLength: 1, maxLength: 50, description: 'Nombre del empleado' },
+                apellido_empleado: { bsonType: 'string', minLength: 1, maxLength: 50, description: 'Apellido del empleado' },
+                telefono: { bsonType: 'string', pattern: '^[0-9]{10}$', description: 'Telefono del empleado (10 dígitos)' },
+                direccion: { bsonType: 'string', minLength: 1, maxLength: 200, description: 'Direccion del empleado' },
+                puesto: { bsonType: 'string', minLength: 1, maxLength: 50, description: 'Puesto del empleado' }
+            }
+        }
+    }
+});
+
+// Colección ventas
+db.createCollection('ventas', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validacion de ventas',
+            required: ['id_venta', 'id_cliente', 'id_empleado', 'Fecha_Venta', 'Monto_Total'],
+            properties: {
+                id_venta: { bsonType: 'int', minimum: 1, description: 'ID Venta' },
+                id_cliente: { bsonType: 'int', minimum: 1, description: 'ID Cliente' },
+                id_empleado: { bsonType: 'int', minimum: 1, description: 'ID Empleado' },
+                Fecha_Venta: { bsonType: 'date', description: 'Fecha de la venta' },
+                Monto_Total: { bsonType: 'decimal', minimum: 0.01, description: 'Monto total de la venta' },
+                detalle_ventas: {
+                    bsonType: 'object',
+                    required: ['id_producto', 'cantidad', 'precio_venta'],
+                    properties: {
+                        id_producto: { bsonType: 'int', minimum: 1, description: 'ID Producto' },
+                        cantidad: { bsonType: 'int', minimum: 1, description: 'Cantidad' },
+                        precio_venta: { bsonType: 'decimal', minimum: 0.01, description: 'Precio de venta' }
+                    }
+                }
+            }
+        }
+    }
+});
+
+// Colección compras
+db.createCollection('compras', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validacion de compras',
+            required: ['id_compra', 'id_proveedor', 'id_empleado', 'fecha_compra', 'total_compra'],
+            properties: {
+                id_compra: { bsonType: 'int', minimum: 1, description: 'ID Compra' },
+                id_proveedor: { bsonType: 'int', minimum: 1, description: 'ID Proveedor' },
+                id_empleado: { bsonType: 'int', minimum: 1, description: 'ID Empleado' },
+                fecha_compra: { bsonType: 'date', description: 'Fecha de compra' },
+                total_compra: { bsonType: 'decimal', minimum: 0.01, description: 'Total de la compra' },
+                detalle_compras: {
+                    bsonType: 'object',
+                    required: ['id_detalle_compra', 'id_producto', 'cantidad', 'precio_costo'],
+                    properties: {
+                        id_producto: { bsonType: 'int', minimum: 1, description: 'ID Producto' },
+                        cantidad: { bsonType: 'int', minimum: 1, description: 'Cantidad' },
+                        precio_costo: { bsonType: 'decimal', minimum: 0.01, description: 'Precio de costo' }
+                    }
+                }
+            }
+        }
+    }
+});
+
+// Coleccion Devoluciones Compras
+db.createCollection('devoluciones_compras', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validacion de devoluciones_compras',
+            required: ['id_devolucion_compra', 'id_compra', 'id_producto', 'cantidad', 'motivo_devolucion', 'fecha_devolucion'],
+            properties: {
+                id_devolucion_compra: {
+                    bsonType: 'int',
+                    description: 'ID_Devolucion_Compra',
+                    minimum: 1
+                },
+                id_compra: {
+                    bsonType: 'int',
+                    description: 'Id_Compra',
+                    minimum: 1
+                },
+                id_producto: {
+                    bsonType: 'int',
+                    description: 'ID_Producto',
+                    minimum: 1
+                },
+                cantidad: {
+                    bsonType: 'int',
+                    description: 'Cantidad',
+                    minimum: 1
+                },
+                motivo_devolucion: {
+                    bsonType: 'string',
+                    description: 'Motivo de la devolucion',
+                    minLength: 1,
+                    maxLength: 200
+                },
+                fecha_devolucion: {
+                    bsonType: 'date',
+                    description: 'Fecha de devolucion'
+                }
+            }
+        }
+    }
+});
+
+// Coleccion Devoluciones Ventas
+db.createCollection('devoluciones_ventas', {
+    validator: {
+        $jsonSchema: {
+            bsonType: 'object',
+            title: 'Validacion de devoluciones_ventas',
+            required: ['id_devolucion_venta', 'id_venta', 'id_producto', 'cantidad', 'motivo_devolucion', 'fecha_devolucion'],
+            properties: {
+                id_devolucion_venta: {
+                    bsonType: 'int',
+                    description: 'ID_Devolucion_Venta',
+                    minimum: 1
+                },
+                id_venta: {
+                    bsonType: 'int',
+                    description: 'Id_Venta',
+                    minimum: 1
+                },
+                id_producto: {
+                    bsonType: 'int',
+                    description: 'ID_Producto',
+                    minimum: 1
+                },
+                cantidad: {
+                    bsonType: 'int',
+                    description: 'Cantidad',
+                    minimum: 1
+                },
+                motivo_devolucion: {
+                    bsonType: 'string',
+                    description: 'Motivo de la devolucion',
+                    minLength: 1,
+                    maxLength: 200
+                },
+                fecha_devolucion: {
+                    bsonType: 'date',
+                    description: 'Fecha de devolucion'
+                }
+            }
+        }
+    }
+});

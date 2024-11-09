@@ -1,0 +1,246 @@
+use("vinateria");
+
+db.proveedores.insertMany(
+    [
+        {
+            "id_proveedor": 1,
+            "Nombre_Proveedor": "Casa Tequilera Los Agaves ",
+            "Contacto_Proveedor": "Martínez Hernández",
+            "Direccion_Proveedor": "Carretera Federal 200 km 12, Tequila, Jalisco",
+            "Telefono_Proveedor": "3351259782",
+            "proveedores_productos": {
+                "id_producto": 1,
+                "Precio_Costo": 200.00,
+                "Fecha_Compra": "2023-01-15"
+            }
+        },
+        {
+            "id_proveedor": 2,
+            "Nombre_Proveedor": " Don Manuel ",
+            "Contacto_Proveedor": "Don Manuel Galvez",
+            "Direccion_Proveedor": "Ave Innova 589",
+            "Telefono_Proveedor": "3531203985",
+            "proveedores_productos": {
+                "id_producto": 2,
+                "Precio_Costo": 150.00,
+                "Fecha_Compra": "2023-02-20"
+            }
+        },
+        {
+            "id_proveedor": 3,
+            "Nombre_Proveedor": " Osmid",
+            "Contacto_Proveedor": "Luis Morgado Nuño",
+            "Direccion_Proveedor": "Frcc 18 de marzo",
+            "Telefono_Proveedor": "6253456985",
+            "proveedores_productos": {
+                "id_producto": 3,
+                "Precio_Costo": 160.00,
+                "Fecha_Compra": "2023-03-05"
+            }
+        },
+        {
+            "id_proveedor": 4,
+            "Nombre_Proveedor": " Don Juan",
+            "Contacto_Proveedor": "Juan Manuel Hernandes",
+            "Direccion_Proveedor": "Colonia rosarito 85",
+            "Telefono_Proveedor": "6597854985",
+            "proveedores_productos": {
+                "id_producto": 4,
+                "Precio_Costo": 600.00,
+                "Fecha_Compra": "2023-04-10"
+            }
+        },
+        {
+            "id_proveedor": 5,
+            "Nombre_Proveedor": "Mi Apa",
+            "Contacto_Proveedor": "Juan Pedro Ninones",
+            "Direccion_Proveedor": "Fracc lasmargaritas598",
+            "Telefono_Proveedor": "3532654679",
+            "proveedores_productos": {
+                "id_producto": 5,
+                "Precio_Costo": 300.00,
+                "Fecha_Compra": "2023-05-15"
+            }
+        },
+        {
+            "id_proveedor": 6,
+            "Nombre_Proveedor": "Roneros Asociados",
+            "Contacto_Proveedor": "Carmen Fernández",
+            "Direccion_Proveedor": "Calle del Ron 987",
+            "Telefono_Proveedor": "5556789012",
+            "proveedores_productos": {
+                "id_producto": 6,
+                "Precio_Costo": 700.00,
+                "Fecha_Compra": "2023-06-20"
+            }
+        },
+        {
+            "id_proveedor": 7,
+            "Nombre_Proveedor": "Vodkas Premium",
+            "Contacto_Proveedor": "José Sánchez",
+            "Direccion_Proveedor": "Calle Finlandia 159",
+            "Telefono_Proveedor": "5557890123",
+            "proveedores_productos": {
+                "id_producto": 7,
+                "Precio_Costo": 280.00,
+                "Fecha_Compra": "2023-07-25"
+            }
+        },
+        {
+            "id_proveedor": 8,
+            "Nombre_Proveedor": "Ginebras y Más",
+            "Contacto_Proveedor": "Sandra Morales",
+            "Direccion_Proveedor": "Calle Inglaterra 258",
+            "Telefono_Proveedor": "5558901234",
+            "proveedores_productos": {
+                "id_producto": 8,
+                "Precio_Costo": 180.00,
+                "Fecha_Compra": "2023-08-30"
+            }
+        },
+        {
+            "id_proveedor": 9,
+            "Nombre_Proveedor": "Cervecerías Unidas",
+            "Contacto_Proveedor": "Andrés Rodríguez",
+            "Direccion_Proveedor": "Avenida Cerveza 357",
+            "Telefono_Proveedor": "5559012345",
+            "proveedores_productos": {
+                "id_producto": 9,
+                "Precio_Costo": 220.00,
+                "Fecha_Compra": "2023-09-10"
+            }
+        },
+        {
+            "id_proveedor": 10,
+            "Nombre_Proveedor": "Cognacs del Sur",
+            "Contacto_Proveedor": "Beatriz Gómez",
+            "Direccion_Proveedor": "Calle Cognac 456",
+            "Telefono_Proveedor": "5550123456",
+            "proveedores_productos": {
+                "id_producto": 10,
+                "Precio_Costo": 80.00,
+                "Fecha_Compra": "2023-10-05"
+            }
+        },
+        {
+            "id_proveedor": 11,
+            "Nombre_Proveedor": "Brandy Destiladores",
+            "Contacto_Proveedor": "Fernando Torres",
+            "Direccion_Proveedor": "Calle de la Uva 123",
+            "Telefono_Proveedor": "5551122334",
+            "proveedores_productos": {
+                "id_producto": 11,
+                "Precio_Costo": 1000.00,
+                "Fecha_Compra": "2023-11-15"
+            }
+        },
+        {
+            "id_proveedor": 12,
+            "Nombre_Proveedor": "Mezcaleros Unidos",
+            "Contacto_Proveedor": "Laura Ramírez",
+            "Direccion_Proveedor": "Calle de Oaxaca 789",
+            "Telefono_Proveedor": "5552233445",
+            "proveedores_productos": {
+                "id_producto": 12,
+                "Precio_Costo": 240.00,
+                "Fecha_Compra": "2023-12-20"
+            }
+        },
+        {
+            "id_proveedor": 13,
+            "Nombre_Proveedor": "Sakes Japoneses",
+            "Contacto_Proveedor": "Hiroshi Tanaka",
+            "Direccion_Proveedor": "Calle de Tokio 321",
+            "Telefono_Proveedor": "5553344556",
+            "proveedores_productos": {
+                "id_producto": 13,
+                "Precio_Costo": 400.00,
+                "Fecha_Compra": "2023-01-05"
+            }
+        },
+        {
+            "id_proveedor": 14,
+            "Nombre_Proveedor": "Licores Especiales",
+            "Contacto_Proveedor": "Raúl Jiménez",
+            "Direccion_Proveedor": "Avenida Licores 654",
+            "Telefono_Proveedor": "5554455667",
+            "proveedores_productos": {
+                "id_producto": 14,
+                "Precio_Costo": 300.00,
+                "Fecha_Compra": "2023-02-10"
+            }
+        },
+        {
+            "id_proveedor": 15,
+            "Nombre_Proveedor": "Sidreros del Norte",
+            "Contacto_Proveedor": "Miguel Herrera",
+            "Direccion_Proveedor": "Calle Manzana 987",
+            "Telefono_Proveedor": "5555566778",
+            "proveedores_productos": {
+                "id_producto": 15,
+                "Precio_Costo": 160.00,
+                "Fecha_Compra": "2023-03-15"
+            }
+        },
+        {
+            "id_proveedor": 16,
+            "Nombre_Proveedor": "Anises del Mediterráneo",
+            "Contacto_Proveedor": "Pablo Ruiz",
+            "Direccion_Proveedor": "Calle del Mar 123",
+            "Telefono_Proveedor": "5556677889",
+            "proveedores_productos": {
+                "id_producto": 16,
+                "Precio_Costo": 120.00,
+                "Fecha_Compra": "2023-04-20"
+            }
+        },
+        {
+            "id_proveedor": 17,
+            "Nombre_Proveedor": "Absenta y Co",
+            "Contacto_Proveedor": "Diego Martínez",
+            "Direccion_Proveedor": "Calle de Absenta 456",
+            "Telefono_Proveedor": "5557788990",
+            "proveedores_productos": {
+                "id_producto": 17,
+                "Precio_Costo": 180.00,
+                "Fecha_Compra": "2023-05-25"
+            }
+        },
+        {
+            "id_proveedor": 18,
+            "Nombre_Proveedor": "Crema de Licores",
+            "Contacto_Proveedor": "Patricia Cruz",
+            "Direccion_Proveedor": "Avenida Dulce 321",
+            "Telefono_Proveedor": "5558899001",
+            "proveedores_productos": {
+                "id_producto": 18,
+                "Precio_Costo": 140.00,
+                "Fecha_Compra": "2023-06-30"
+            }
+        },
+        {
+            "id_proveedor": 19,
+            "Nombre_Proveedor": "Champán Internacional",
+            "Contacto_Proveedor": "Alberto Pineda",
+            "Direccion_Proveedor": "Boulevard Francia 159",
+            "Telefono_Proveedor": "5559900123",
+            "proveedores_productos": {
+                "id_producto": 19,
+                "Precio_Costo": 500.00,
+                "Fecha_Compra": "2023-07-05"
+            }
+        },
+        {
+            "id_proveedor": 20,
+            "Nombre_Proveedor": "Vermouth Tradicional",
+            "Contacto_Proveedor": "Ángela Navarro",
+            "Direccion_Proveedor": "Calle de la Especias 258",
+            "Telefono_Proveedor": "5551011121",
+            "proveedores_productos": {
+                "id_producto": 20,
+                "Precio_Costo": 250.00,
+                "Fecha_Compra": "2023-08-10"
+            }
+        }
+    ]
+)

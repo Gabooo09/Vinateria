@@ -1,0 +1,167 @@
+use("vinateria");
+
+
+db.devoluciones_ventas.insertMany(
+    [
+        {
+            "id_devolucion_venta": 1,
+            "id_venta": 1,
+            "id_producto": 2,
+            "cantidad": 1,
+            "motivo_devolucion": "Producto defectuoso",
+            "fecha_devolucion": "2024-01-18"
+        },
+        {
+            "id_devolucion_venta": 2,
+            "id_venta": 2,
+            "id_producto": 3,
+            "cantidad": 2,
+            "motivo_devolucion": "No cumple especificaciones",
+            "fecha_devolucion": "2024-01-21"
+        },
+        {
+            "id_devolucion_venta": 3,
+            "id_venta": 3,
+            "id_producto": 1,
+            "cantidad": 1,
+            "motivo_devolucion": "Defectos visuales",
+            "fecha_devolucion": "2024-01-23"
+        },
+        {
+            "id_devolucion_venta": 4,
+            "id_venta": 4,
+            "id_producto": 4,
+            "cantidad": 3,
+            "motivo_devolucion": "Error de embalaje",
+            "fecha_devolucion": "2024-01-29"
+        },
+        {
+            "id_devolucion_venta": 5,
+            "id_venta": 5,
+            "id_producto": 2,
+            "cantidad": 2,
+            "motivo_devolucion": "Calidad insatisfactoria",
+            "fecha_devolucion": "2024-02-04"
+        },
+        {
+            "id_devolucion_venta": 6,
+            "id_venta": 6,
+            "id_producto": 5,
+            "cantidad": 1,
+            "motivo_devolucion": "Empaque dañado",
+            "fecha_devolucion": "2024-02-07"
+        },
+        {
+            "id_devolucion_venta": 7,
+            "id_venta": 7,
+            "id_producto": 1,
+            "cantidad": 2,
+            "motivo_devolucion": "Producto equivocado",
+            "fecha_devolucion": "2024-02-12"
+        },
+        {
+            "id_devolucion_venta": 8,
+            "id_venta": 8,
+            "id_producto": 2,
+            "cantidad": 1,
+            "motivo_devolucion": "Roto en el transporte",
+            "fecha_devolucion": "2024-02-14"
+        },
+        {
+            "id_devolucion_venta": 9,
+            "id_venta": 9,
+            "id_producto": 3,
+            "cantidad": 3,
+            "motivo_devolucion": "Mala calidad",
+            "fecha_devolucion": "2024-02-17"
+        },
+        {
+            "id_devolucion_venta": 10,
+            "id_venta": 10,
+            "id_producto": 4,
+            "cantidad": 2,
+            "motivo_devolucion": "Producto vencido",
+            "fecha_devolucion": "2024-02-22"
+        },
+        {
+            "id_devolucion_venta": 11,
+            "id_venta": 11,
+            "id_producto": 1,
+            "cantidad": 1,
+            "motivo_devolucion": "Color incorrecto",
+            "fecha_devolucion": "2024-02-27"
+        },
+        {
+            "id_devolucion_venta": 12,
+            "id_venta": 12,
+            "id_producto": 2,
+            "cantidad": 1,
+            "motivo_devolucion": "Mala presentación",
+            "fecha_devolucion": "2024-03-03"
+        },
+        {
+            "id_devolucion_venta": 13,
+            "id_venta": 13,
+            "id_producto": 3,
+            "cantidad": 2,
+            "motivo_devolucion": "Producto dañado",
+            "fecha_devolucion": "2024-03-06"
+        },
+        {
+            "id_devolucion_venta": 14,
+            "id_venta": 14,
+            "id_producto": 5,
+            "cantidad": 1,
+            "motivo_devolucion": "Recibido tarde",
+            "fecha_devolucion": "2024-03-09"
+        },
+        {
+            "id_devolucion_venta": 15,
+            "id_venta": 15,
+            "id_producto": 4,
+            "cantidad": 1,
+            "motivo_devolucion": "No satisface expectativas",
+            "fecha_devolucion": "2024-03-14"
+        },
+        {
+            "id_devolucion_venta": 16,
+            "id_venta": 16,
+            "id_producto": 1,
+            "cantidad": 3,
+            "motivo_devolucion": "Defecto en el producto",
+            "fecha_devolucion": "2024-03-18"
+        },
+        {
+            "id_devolucion_venta": 17,
+            "id_venta": 17,
+            "id_producto": 2,
+            "cantidad": 2,
+            "motivo_devolucion": "Error en la cantidad",
+            "fecha_devolucion": "2024-03-22"
+        },
+        {
+            "id_devolucion_venta": 18,
+            "id_venta": 18,
+            "id_producto": 3,
+            "cantidad": 2,
+            "motivo_devolucion": "Producto dañado",
+            "fecha_devolucion": "2024-03-27"
+        },
+        {
+            "id_devolucion_venta": 19,
+            "id_venta": 19,
+            "id_producto": 5,
+            "cantidad": 1,
+            "motivo_devolucion": "Empaque en mal estado",
+            "fecha_devolucion": "2024-04-01"
+        },
+        {
+            "id_devolucion_venta": 20,
+            "id_venta": 20,
+            "id_producto": 4,
+            "cantidad": 1,
+            "motivo_devolucion": "Defecto interno",
+            "fecha_devolucion": "2024-04-04"
+        }
+    ]
+)

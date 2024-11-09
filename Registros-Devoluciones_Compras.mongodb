@@ -1,0 +1,166 @@
+use("vinateria");
+
+db.devoluciones_compras.insertMany(
+    [
+        {
+            "id_devolucion_compra": 1,
+            "id_compra": 1,
+            "id_producto": 2,
+            "cantidad": 2,
+            "motivo_devolucion": "Producto defectuoso",
+            "fecha_devolucion": "2024-01-17"
+        },
+        {
+            "id_devolucion_compra": 2,
+            "id_compra": 2,
+            "id_producto": 3,
+            "cantidad": 1,
+            "motivo_devolucion": "Empaque dañado",
+            "fecha_devolucion": "2024-01-20"
+        },
+        {
+            "id_devolucion_compra": 3,
+            "id_compra": 3,
+            "id_producto": 1,
+            "cantidad": 3,
+            "motivo_devolucion": "Error en el pedido",
+            "fecha_devolucion": "2024-01-22"
+        },
+        {
+            "id_devolucion_compra": 4,
+            "id_compra": 4,
+            "id_producto": 4,
+            "cantidad": 2,
+            "motivo_devolucion": "Vencido",
+            "fecha_devolucion": "2024-01-28"
+        },
+        {
+            "id_devolucion_compra": 5,
+            "id_compra": 5,
+            "id_producto": 2,
+            "cantidad": 1,
+            "motivo_devolucion": "Calidad insuficiente",
+            "fecha_devolucion": "2024-02-03"
+        },
+        {
+            "id_devolucion_compra": 6,
+            "id_compra": 6,
+            "id_producto": 5,
+            "cantidad": 2,
+            "motivo_devolucion": "Producto roto",
+            "fecha_devolucion": "2024-02-06"
+        },
+        {
+            "id_devolucion_compra": 7,
+            "id_compra": 7,
+            "id_producto": 1,
+            "cantidad": 4,
+            "motivo_devolucion": "No cumple con especificaciones",
+            "fecha_devolucion": "2024-02-11"
+        },
+        {
+            "id_devolucion_compra": 8,
+            "id_compra": 8,
+            "id_producto": 2,
+            "cantidad": 1,
+            "motivo_devolucion": "Mal almacenamiento",
+            "fecha_devolucion": "2024-02-13"
+        },
+        {
+            "id_devolucion_compra": 9,
+            "id_compra": 9,
+            "id_producto": 3,
+            "cantidad": 3,
+            "motivo_devolucion": "Empaque roto",
+            "fecha_devolucion": "2024-02-16"
+        },
+        {
+            "id_devolucion_compra": 10,
+            "id_compra": 10,
+            "id_producto": 4,
+            "cantidad": 1,
+            "motivo_devolucion": "No era lo solicitado",
+            "fecha_devolucion": "2024-02-21"
+        },
+        {
+            "id_devolucion_compra": 11,
+            "id_compra": 11,
+            "id_producto": 1,
+            "cantidad": 2,
+            "motivo_devolucion": "Producto caducado",
+            "fecha_devolucion": "2024-02-26"
+        },
+        {
+            "id_devolucion_compra": 12,
+            "id_compra": 12,
+            "id_producto": 2,
+            "cantidad": 3,
+            "motivo_devolucion": "Defecto en el producto",
+            "fecha_devolucion": "2024-03-01"
+        },
+        {
+            "id_devolucion_compra": 13,
+            "id_compra": 13,
+            "id_producto": 3,
+            "cantidad": 1,
+            "motivo_devolucion": "No cumplía las expectativas",
+            "fecha_devolucion": "2024-03-04"
+        },
+        {
+            "id_devolucion_compra": 14,
+            "id_compra": 14,
+            "id_producto": 5,
+            "cantidad": 1,
+            "motivo_devolucion": "Llegó en mal estado",
+            "fecha_devolucion": "2024-03-07"
+        },
+        {
+            "id_devolucion_compra": 15,
+            "id_compra": 15,
+            "id_producto": 4,
+            "cantidad": 2,
+            "motivo_devolucion": "Mala calidad",
+            "fecha_devolucion": "2024-03-12"
+        },
+        {
+            "id_devolucion_compra": 16,
+            "id_compra": 16,
+            "id_producto": 1,
+            "cantidad": 1,
+            "motivo_devolucion": "Producto incompleto",
+            "fecha_devolucion": "2024-03-17"
+        },
+        {
+            "id_devolucion_compra": 17,
+            "id_compra": 17,
+            "id_producto": 2,
+            "cantidad": 4,
+            "motivo_devolucion": "Rotura en el transporte",
+            "fecha_devolucion": "2024-03-21"
+        },
+        {
+            "id_devolucion_compra": 18,
+            "id_compra": 18,
+            "id_producto": 3,
+            "cantidad": 2,
+            "motivo_devolucion": "Lote defectuoso",
+            "fecha_devolucion": "2024-03-26"
+        },
+        {
+            "id_devolucion_compra": 19,
+            "id_compra": 19,
+            "id_producto": 5,
+            "cantidad": 3,
+            "motivo_devolucion": "Fecha caducada",
+            "fecha_devolucion": "2024-03-31"
+        },
+        {
+            "id_devolucion_compra": 20,
+            "id_compra": 20,
+            "id_producto": 4,
+            "cantidad": 1,
+            "motivo_devolucion": "Falla de embalaje",
+            "fecha_devolucion": "2024-04-03"
+        }
+    ]
+)

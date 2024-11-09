@@ -1,0 +1,247 @@
+
+use("vinateria");
+
+db.ventas.insertMany(
+    [
+        {
+            "id_venta": 1,
+            "id_cliente": 1,
+            "id_empleado": 1,
+            "Fecha_Venta": "2024-01-15",
+            "Monto_Total": 1200.00,
+            "detalle_ventas": {
+                "id_producto": 1,
+                "cantidad": 2,
+                "precio_venta": 240.00
+            }
+        },
+        {
+            "id_venta": 1,
+            "id_cliente": 1,
+            "id_empleado": 1,
+            "Fecha_Venta": "2024-01-15",
+            "Monto_Total": 1200.00,
+            "detalle_ventas": {
+                "id_producto": 3,
+                "cantidad": 1,
+                "precio_venta": 200.00
+            }
+        },
+        {
+            "id_venta": 2,
+            "id_cliente": 2,
+            "id_empleado": 2,
+            "Fecha_Venta": "2024-01-20",
+            "Monto_Total": 800.00,
+            "detalle_ventas": {
+                "id_producto": 2,
+                "cantidad": 3,
+                "precio_venta": 540.00
+            }
+        },
+        {
+            "id_venta": 2,
+            "id_cliente": 2,
+            "id_empleado": 2,
+            "Fecha_Venta": "2024-01-20",
+            "Monto_Total": 800.00,
+            "detalle_ventas": {
+                "id_producto": 4,
+                "cantidad": 1,
+                "precio_venta": 750.00
+            }
+        },
+        {
+            "id_venta": 3,
+            "id_cliente": 3,
+            "id_empleado": 3,
+            "Fecha_Venta": "2024-01-25",
+            "Monto_Total": 1000.00,
+            "detalle_ventas": {
+                "id_producto": 5,
+                "cantidad": 2,
+                "precio_venta": 700.00
+            }
+        },
+        {
+            "id_venta": 3,
+            "id_cliente": 3,
+            "id_empleado": 3,
+            "Fecha_Venta": "2024-01-25",
+            "Monto_Total": 1000.00,
+            "detalle_ventas": {
+                "id_producto": 6,
+                "cantidad": 1,
+                "precio_venta": 800.00
+            }
+        },
+        {
+            "id_venta": 4,
+            "id_cliente": 4,
+            "id_empleado": 4,
+            "Fecha_Venta": "2024-01-30",
+            "Monto_Total": 750.00,
+            "detalle_ventas": {
+                "id_producto": 7,
+                "cantidad": 3,
+                "precio_venta": 960.00
+            }
+        },
+        {
+            "id_venta": 4,
+            "id_cliente": 4,
+            "id_empleado": 4,
+            "Fecha_Venta": "2024-01-30",
+            "Monto_Total": 750.00,
+            "detalle_ventas": {
+                "id_producto": 8,
+                "cantidad": 1,
+                "precio_venta": 220.00
+            }
+        },
+        {
+            "id_venta": 5,
+            "id_cliente": 5,
+            "id_empleado": 5,
+            "Fecha_Venta": "2024-02-05",
+            "Monto_Total": 500.00,
+            "detalle_ventas": {
+                "id_producto": 9,
+                "cantidad": 2,
+                "precio_venta": 540.00
+            }
+        },
+        {
+            "id_venta": 5,
+            "id_cliente": 5,
+            "id_empleado": 5,
+            "Fecha_Venta": "2024-02-05",
+            "Monto_Total": 500.00,
+            "detalle_ventas": {
+                "id_producto": 10,
+                "cantidad": 1,
+                "precio_venta": 100.00
+            }
+        },
+        {
+            "id_venta": 6,
+            "id_cliente": 6,
+            "id_empleado": 6,
+            "Fecha_Venta": "2024-02-10",
+            "Monto_Total": 700.00,
+            "detalle_ventas": {
+                "id_producto": 11,
+                "cantidad": 1,
+                "precio_venta": 1200.00
+            }
+        },
+        {
+            "id_venta": 6,
+            "id_cliente": 6,
+            "id_empleado": 6,
+            "Fecha_Venta": "2024-02-10",
+            "Monto_Total": 700.00,
+            "detalle_ventas": {
+                "id_producto": 12,
+                "cantidad": 2,
+                "precio_venta": 580.00
+            }
+        },
+        {
+            "id_venta": 7,
+            "id_cliente": 7,
+            "id_empleado": 7,
+            "Fecha_Venta": "2024-02-15",
+            "Monto_Total": 650.00,
+            "detalle_ventas": {
+                "id_producto": 13,
+                "cantidad": 1,
+                "precio_venta": 450.00
+            }
+        },
+        {
+            "id_venta": 7,
+            "id_cliente": 7,
+            "id_empleado": 7,
+            "Fecha_Venta": "2024-02-15",
+            "Monto_Total": 650.00,
+            "detalle_ventas": {
+                "id_producto": 14,
+                "cantidad": 1,
+                "precio_venta": 350.00
+            }
+        },
+        {
+            "id_venta": 8,
+            "id_cliente": 8,
+            "id_empleado": 8,
+            "Fecha_Venta": "2024-02-20",
+            "Monto_Total": 900.00,
+            "detalle_ventas": {
+                "id_producto": 15,
+                "cantidad": 2,
+                "precio_venta": 400.00
+            }
+        },
+        {
+            "id_venta": 8,
+            "id_cliente": 8,
+            "id_empleado": 8,
+            "Fecha_Venta": "2024-02-20",
+            "Monto_Total": 900.00,
+            "detalle_ventas": {
+                "id_producto": 16,
+                "cantidad": 3,
+                "precio_venta": 450.00
+            }
+        },
+        {
+            "id_venta": 9,
+            "id_cliente": 9,
+            "id_empleado": 9,
+            "Fecha_Venta": "2024-02-25",
+            "Monto_Total": 1100.00,
+            "detalle_ventas": {
+                "id_producto": 17,
+                "cantidad": 1,
+                "precio_venta": 220.00
+            }
+        },
+        {
+            "id_venta": 9,
+            "id_cliente": 9,
+            "id_empleado": 9,
+            "Fecha_Venta": "2024-02-25",
+            "Monto_Total": 1100.00,
+            "detalle_ventas": {
+                "id_producto": 18,
+                "cantidad": 1,
+                "precio_venta": 180.00
+            }
+        },
+        {
+            "id_venta": 10,
+            "id_cliente": 10,
+            "id_empleado": 10,
+            "Fecha_Venta": "2024-03-01",
+            "Monto_Total": 950.00,
+            "detalle_ventas": {
+                "id_producto": 19,
+                "cantidad": 2,
+                "precio_venta": 1300.00
+            }
+        },
+        {
+            "id_venta": 10,
+            "id_cliente": 10,
+            "id_empleado": 10,
+            "Fecha_Venta": "2024-03-01",
+            "Monto_Total": 950.00,
+            "detalle_ventas": {
+                "id_producto": 20,
+                "cantidad": 1,
+                "precio_venta": 300.00
+            }
+        }
+    ]
+)

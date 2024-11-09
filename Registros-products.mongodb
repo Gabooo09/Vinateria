@@ -1,0 +1,1126 @@
+use("vinateria");
+
+db.productos.insertMany(
+    [
+        {
+            "id_producto": 1,
+            "id_tipo_prod": 1,
+            "Nombre_Producto": "Vino Tinto Gran Reserva",
+            "Descripcion": "Vino tinto con 24 meses en barrica",
+            "Precio": 500.00,
+            "tipos_productos": {
+                "tipo": "Vino Tinto"
+            },
+            "inventarios": {
+                "cantidad_disponible": 50,
+                "fecha_actualizacion": "2024-10-01"
+            }
+        },
+        {
+            "id_producto": 2,
+            "id_tipo_prod": 1,
+            "Nombre_Producto": "Vino Tinto Joven",
+            "Descripcion": "Vino tinto fresco sin crianza",
+            "Precio": 150.00,
+            "tipos_productos": {
+                "tipo": "Vino Tinto"
+            },
+            "inventarios": {
+                "cantidad_disponible": 50,
+                "fecha_actualizacion": "2024-10-01"
+            }
+        },
+        {
+            "id_producto": 3,
+            "id_tipo_prod": 1,
+            "Nombre_Producto": "Vino Tinto Crianza",
+            "Descripcion": "Vino tinto con 12 meses en barrica",
+            "Precio": 350.00,
+            "tipos_productos": {
+                "tipo": "Vino Tinto"
+            },
+            "inventarios": {
+                "cantidad_disponible": 50,
+                "fecha_actualizacion": "2024-10-01"
+            }
+        },
+        {
+            "id_producto": 4,
+            "id_tipo_prod": 1,
+            "Nombre_Producto": "Vino Tinto Roble",
+            "Descripcion": "Vino tinto con 6 meses en barrica",
+            "Precio": 250.00,
+            "tipos_productos": {
+                "tipo": "Vino Tinto"
+            },
+            "inventarios": {
+                "cantidad_disponible": 50,
+                "fecha_actualizacion": "2024-10-01"
+            }
+        },
+        {
+            "id_producto": 5,
+            "id_tipo_prod": 2,
+            "Nombre_Producto": "Vino Blanco Sauvignon Blanc",
+            "Descripcion": "Vino blanco seco y afrutado",
+            "Precio": 180.00,
+            "tipos_productos": {
+                "tipo": "Vino Blanco"
+            },
+            "inventarios": {
+                "cantidad_disponible": 40,
+                "fecha_actualizacion": "2024-10-02"
+            }
+        },
+        {
+            "id_producto": 6,
+            "id_tipo_prod": 2,
+            "Nombre_Producto": "Vino Blanco Verdejo",
+            "Descripcion": "Vino blanco con notas herbáceas",
+            "Precio": 160.00,
+            "tipos_productos": {
+                "tipo": "Vino Blanco"
+            },
+            "inventarios": {
+                "cantidad_disponible": 40,
+                "fecha_actualizacion": "2024-10-02"
+            }
+        },
+        {
+            "id_producto": 7,
+            "id_tipo_prod": 2,
+            "Nombre_Producto": "Vino Blanco Semidulce",
+            "Descripcion": "Vino blanco con un toque dulce",
+            "Precio": 200.00,
+            "tipos_productos": {
+                "tipo": "Vino Blanco"
+            },
+            "inventarios": {
+                "cantidad_disponible": 40,
+                "fecha_actualizacion": "2024-10-02"
+            }
+        },
+        {
+            "id_producto": 8,
+            "id_tipo_prod": 2,
+            "Nombre_Producto": "Vino Blanco Albariño",
+            "Descripcion": "Vino blanco con notas cítricas",
+            "Precio": 220.00,
+            "tipos_productos": {
+                "tipo": "Vino Blanco"
+            },
+            "inventarios": {
+                "cantidad_disponible": 40,
+                "fecha_actualizacion": "2024-10-02"
+            }
+        },
+        {
+            "id_producto": 9,
+            "id_tipo_prod": 3,
+            "Nombre_Producto": "Vino Rosado Seco",
+            "Descripcion": "Vino rosado con un final seco y afrutado",
+            "Precio": 190.00,
+            "tipos_productos": {
+                "tipo": "Vino Rosado"
+            },
+            "inventarios": {
+                "cantidad_disponible": 30,
+                "fecha_actualizacion": "2024-10-03"
+            }
+        },
+        {
+            "id_producto": 10,
+            "id_tipo_prod": 3,
+            "Nombre_Producto": "Vino Rosado Semi-Seco",
+            "Descripcion": "Vino rosado con un toque de dulzura",
+            "Precio": 210.00,
+            "tipos_productos": {
+                "tipo": "Vino Rosado"
+            },
+            "inventarios": {
+                "cantidad_disponible": 30,
+                "fecha_actualizacion": "2024-10-03"
+            }
+        },
+        {
+            "id_producto": 11,
+            "id_tipo_prod": 3,
+            "Nombre_Producto": "Vino Rosado Joven",
+            "Descripcion": "Vino rosado fresco sin crianza",
+            "Precio": 170.00,
+            "tipos_productos": {
+                "tipo": "Vino Rosado"
+            },
+            "inventarios": {
+                "cantidad_disponible": 30,
+                "fecha_actualizacion": "2024-10-03"
+            }
+        },
+        {
+            "id_producto": 12,
+            "id_tipo_prod": 3,
+            "Nombre_Producto": "Vino Rosado Reserva",
+            "Descripcion": "Vino rosado con crianza en barrica",
+            "Precio": 240.00,
+            "tipos_productos": {
+                "tipo": "Vino Rosado"
+            },
+            "inventarios": {
+                "cantidad_disponible": 30,
+                "fecha_actualizacion": "2024-10-03"
+            }
+        },
+        {
+            "id_producto": 13,
+            "id_tipo_prod": 4,
+            "Nombre_Producto": "Champán Rosé",
+            "Descripcion": "Champán con toques de frutas rojas",
+            "Precio": 800.00,
+            "tipos_productos": {
+                "tipo": "Champán"
+            },
+            "inventarios": {
+                "cantidad_disponible": 25,
+                "fecha_actualizacion": "2024-10-04"
+            }
+        },
+        {
+            "id_producto": 14,
+            "id_tipo_prod": 4,
+            "Nombre_Producto": "Champán Extra Brut",
+            "Descripcion": "Champán muy seco con burbujas finas",
+            "Precio": 900.00,
+            "tipos_productos": {
+                "tipo": "Champán"
+            },
+            "inventarios": {
+                "cantidad_disponible": 25,
+                "fecha_actualizacion": "2024-10-04"
+            }
+        },
+        {
+            "id_producto": 15,
+            "id_tipo_prod": 4,
+            "Nombre_Producto": "Champán Demi-Sec",
+            "Descripcion": "Champán con un toque de dulzura",
+            "Precio": 750.00,
+            "tipos_productos": {
+                "tipo": "Champán"
+            },
+            "inventarios": {
+                "cantidad_disponible": 25,
+                "fecha_actualizacion": "2024-10-04"
+            }
+        },
+        {
+            "id_producto": 16,
+            "id_tipo_prod": 4,
+            "Nombre_Producto": "Champán Vintage",
+            "Descripcion": "Champán de una cosecha excepcional",
+            "Precio": 1200.00,
+            "tipos_productos": {
+                "tipo": "Champán"
+            },
+            "inventarios": {
+                "cantidad_disponible": 25,
+                "fecha_actualizacion": "2024-10-04"
+            }
+        },
+        {
+            "id_producto": 17,
+            "id_tipo_prod": 5,
+            "Nombre_Producto": "Tequila Blanco",
+            "Descripcion": "Tequila sin añejamiento",
+            "Precio": 300.00,
+            "tipos_productos": {
+                "tipo": "Tequila"
+            },
+            "inventarios": {
+                "cantidad_disponible": 45,
+                "fecha_actualizacion": "2024-10-05"
+            }
+        },
+        {
+            "id_producto": 18,
+            "id_tipo_prod": 5,
+            "Nombre_Producto": "Tequila Añejo",
+            "Descripcion": "Tequila añejado por 1 año",
+            "Precio": 450.00,
+            "tipos_productos": {
+                "tipo": "Tequila"
+            },
+            "inventarios": {
+                "cantidad_disponible": 45,
+                "fecha_actualizacion": "2024-10-05"
+            }
+        },
+        {
+            "id_producto": 19,
+            "id_tipo_prod": 5,
+            "Nombre_Producto": "Tequila Cristalino",
+            "Descripcion": "Tequila filtrado para claridad",
+            "Precio": 500.00,
+            "tipos_productos": {
+                "tipo": "Tequila"
+            },
+            "inventarios": {
+                "cantidad_disponible": 45,
+                "fecha_actualizacion": "2024-10-05"
+            }
+        },
+        {
+            "id_producto": 20,
+            "id_tipo_prod": 5,
+            "Nombre_Producto": "Tequila Extra Añejo",
+            "Descripcion": "Tequila añejado por más de 3 años",
+            "Precio": 700.00,
+            "tipos_productos": {
+                "tipo": "Tequila"
+            },
+            "inventarios": {
+                "cantidad_disponible": 45,
+                "fecha_actualizacion": "2024-10-05"
+            }
+        },
+        {
+            "id_producto": 21,
+            "id_tipo_prod": 6,
+            "Nombre_Producto": "Whisky Bourbon",
+            "Descripcion": "Whisky americano con sabor a maíz",
+            "Precio": 650.00,
+            "tipos_productos": {
+                "tipo": "Whisky"
+            },
+            "inventarios": {
+                "cantidad_disponible": 35,
+                "fecha_actualizacion": "2024-10-06"
+            }
+        },
+        {
+            "id_producto": 22,
+            "id_tipo_prod": 6,
+            "Nombre_Producto": "Whisky Irlandés",
+            "Descripcion": "Whisky suave y triple destilado",
+            "Precio": 600.00,
+            "tipos_productos": {
+                "tipo": "Whisky"
+            },
+            "inventarios": {
+                "cantidad_disponible": 35,
+                "fecha_actualizacion": "2024-10-06"
+            }
+        },
+        {
+            "id_producto": 23,
+            "id_tipo_prod": 6,
+            "Nombre_Producto": "Whisky Escocés Blend",
+            "Descripcion": "Mezcla de maltas y granos",
+            "Precio": 500.00,
+            "tipos_productos": {
+                "tipo": "Whisky"
+            },
+            "inventarios": {
+                "cantidad_disponible": 35,
+                "fecha_actualizacion": "2024-10-06"
+            }
+        },
+        {
+            "id_producto": 24,
+            "id_tipo_prod": 6,
+            "Nombre_Producto": "Whisky Japonés",
+            "Descripcion": "Whisky japonés de alta calidad",
+            "Precio": 1000.00,
+            "tipos_productos": {
+                "tipo": "Whisky"
+            },
+            "inventarios": {
+                "cantidad_disponible": 35,
+                "fecha_actualizacion": "2024-10-06"
+            }
+        },
+        {
+            "id_producto": 25,
+            "id_tipo_prod": 7,
+            "Nombre_Producto": "Ron Blanco",
+            "Descripcion": "Ron sin añejamiento, ideal para cócteles",
+            "Precio": 200.00,
+            "tipos_productos": {
+                "tipo": "Ron"
+            },
+            "inventarios": {
+                "cantidad_disponible": 28,
+                "fecha_actualizacion": "2024-10-07"
+            }
+        },
+        {
+            "id_producto": 26,
+            "id_tipo_prod": 7,
+            "Nombre_Producto": "Ron Dorado",
+            "Descripcion": "Ron con ligero añejamiento",
+            "Precio": 250.00,
+            "tipos_productos": {
+                "tipo": "Ron"
+            },
+            "inventarios": {
+                "cantidad_disponible": 28,
+                "fecha_actualizacion": "2024-10-07"
+            }
+        },
+        {
+            "id_producto": 27,
+            "id_tipo_prod": 7,
+            "Nombre_Producto": "Ron Oscuro",
+            "Descripcion": "Ron con notas de caramelo y especias",
+            "Precio": 300.00,
+            "tipos_productos": {
+                "tipo": "Ron"
+            },
+            "inventarios": {
+                "cantidad_disponible": 28,
+                "fecha_actualizacion": "2024-10-07"
+            }
+        },
+        {
+            "id_producto": 28,
+            "id_tipo_prod": 7,
+            "Nombre_Producto": "Ron Reserva",
+            "Descripcion": "Ron añejado por más de 5 años",
+            "Precio": 450.00,
+            "tipos_productos": {
+                "tipo": "Ron"
+            },
+            "inventarios": {
+                "cantidad_disponible": 28,
+                "fecha_actualizacion": "2024-10-07"
+            }
+        },
+        {
+            "id_producto": 29,
+            "id_tipo_prod": 8,
+            "Nombre_Producto": "Vodka Clásico",
+            "Descripcion": "Vodka destilado con agua pura",
+            "Precio": 180.00,
+            "tipos_productos": {
+                "tipo": "Vodka"
+            },
+            "inventarios": {
+                "cantidad_disponible": 22,
+                "fecha_actualizacion": "2024-10-08"
+            }
+        },
+        {
+            "id_producto": 30,
+            "id_tipo_prod": 8,
+            "Nombre_Producto": "Vodka con Sabor a Limón",
+            "Descripcion": "Vodka con un toque de limón",
+            "Precio": 200.00,
+            "tipos_productos": {
+                "tipo": "Vodka"
+            },
+            "inventarios": {
+                "cantidad_disponible": 22,
+                "fecha_actualizacion": "2024-10-08"
+            }
+        },
+        {
+            "id_producto": 31,
+            "id_tipo_prod": 8,
+            "Nombre_Producto": "Vodka Premium",
+            "Descripcion": "Vodka destilado 5 veces",
+            "Precio": 350.00,
+            "tipos_productos": {
+                "tipo": "Vodka"
+            },
+            "inventarios": {
+                "cantidad_disponible": 22,
+                "fecha_actualizacion": "2024-10-08"
+            }
+        },
+        {
+            "id_producto": 32,
+            "id_tipo_prod": 8,
+            "Nombre_Producto": "Vodka Orgánico",
+            "Descripcion": "Vodka hecho con ingredientes orgánicos",
+            "Precio": 400.00,
+            "tipos_productos": {
+                "tipo": "Vodka"
+            },
+            "inventarios": {
+                "cantidad_disponible": 22,
+                "fecha_actualizacion": "2024-10-08"
+            }
+        },
+        {
+            "id_producto": 33,
+            "id_tipo_prod": 9,
+            "Nombre_Producto": "Ginebra London Dry",
+            "Descripcion": "Ginebra clásica con toques de enebro",
+            "Precio": 270.00,
+            "tipos_productos": {
+                "tipo": "Ginebra"
+            },
+            "inventarios": {
+                "cantidad_disponible": 40,
+                "fecha_actualizacion": "2024-10-09"
+            }
+        },
+        {
+            "id_producto": 34,
+            "id_tipo_prod": 9,
+            "Nombre_Producto": "Ginebra Floral",
+            "Descripcion": "Ginebra con notas florales",
+            "Precio": 300.00,
+            "tipos_productos": {
+                "tipo": "Ginebra"
+            },
+            "inventarios": {
+                "cantidad_disponible": 40,
+                "fecha_actualizacion": "2024-10-09"
+            }
+        },
+        {
+            "id_producto": 35,
+            "id_tipo_prod": 9,
+            "Nombre_Producto": "Ginebra Seca",
+            "Descripcion": "Ginebra seca con final herbal",
+            "Precio": 250.00,
+            "tipos_productos": {
+                "tipo": "Ginebra"
+            },
+            "inventarios": {
+                "cantidad_disponible": 40,
+                "fecha_actualizacion": "2024-10-09"
+            }
+        },
+        {
+            "id_producto": 36,
+            "id_tipo_prod": 9,
+            "Nombre_Producto": "Ginebra de Especias",
+            "Descripcion": "Ginebra con un toque especiado",
+            "Precio": 320.00,
+            "tipos_productos": {
+                "tipo": "Ginebra"
+            },
+            "inventarios": {
+                "cantidad_disponible": 40,
+                "fecha_actualizacion": "2024-10-09"
+            }
+        },
+        {
+            "id_producto": 37,
+            "id_tipo_prod": 10,
+            "Nombre_Producto": "Cerveza Lager",
+            "Descripcion": "Cerveza rubia ligera",
+            "Precio": 90.00,
+            "tipos_productos": {
+                "tipo": "Cerveza"
+            },
+            "inventarios": {
+                "cantidad_disponible": 32,
+                "fecha_actualizacion": "2024-10-10"
+            }
+        },
+        {
+            "id_producto": 38,
+            "id_tipo_prod": 10,
+            "Nombre_Producto": "Cerveza IPA",
+            "Descripcion": "Cerveza con un toque amargo y afrutado",
+            "Precio": 120.00,
+            "tipos_productos": {
+                "tipo": "Cerveza"
+            },
+            "inventarios": {
+                "cantidad_disponible": 32,
+                "fecha_actualizacion": "2024-10-10"
+            }
+        },
+        {
+            "id_producto": 39,
+            "id_tipo_prod": 10,
+            "Nombre_Producto": "Cerveza Stout",
+            "Descripcion": "Cerveza oscura con notas de café y chocolate",
+            "Precio": 150.00,
+            "tipos_productos": {
+                "tipo": "Cerveza"
+            },
+            "inventarios": {
+                "cantidad_disponible": 32,
+                "fecha_actualizacion": "2024-10-10"
+            }
+        },
+        {
+            "id_producto": 40,
+            "id_tipo_prod": 10,
+            "Nombre_Producto": "Cerveza de Trigo",
+            "Descripcion": "Cerveza suave con notas de trigo",
+            "Precio": 100.00,
+            "tipos_productos": {
+                "tipo": "Cerveza"
+            },
+            "inventarios": {
+                "cantidad_disponible": 32,
+                "fecha_actualizacion": "2024-10-10"
+            }
+        },
+        {
+            "id_producto": 41,
+            "id_tipo_prod": 11,
+            "Nombre_Producto": "Cognac VS",
+            "Descripcion": "Cognac añejado por 2 años",
+            "Precio": 800.00,
+            "tipos_productos": {
+                "tipo": "Cognac"
+            },
+            "inventarios": {
+                "cantidad_disponible": 28,
+                "fecha_actualizacion": "2024-10-11"
+            }
+        },
+        {
+            "id_producto": 42,
+            "id_tipo_prod": 11,
+            "Nombre_Producto": "Cognac VSOP",
+            "Descripcion": "Cognac añejado por 4 años",
+            "Precio": 1000.00,
+            "tipos_productos": {
+                "tipo": "Cognac"
+            },
+            "inventarios": {
+                "cantidad_disponible": 28,
+                "fecha_actualizacion": "2024-10-11"
+            }
+        },
+        {
+            "id_producto": 43,
+            "id_tipo_prod": 11,
+            "Nombre_Producto": "Cognac XO",
+            "Descripcion": "Cognac añejado por 10 años",
+            "Precio": 1200.00,
+            "tipos_productos": {
+                "tipo": "Cognac"
+            },
+            "inventarios": {
+                "cantidad_disponible": 28,
+                "fecha_actualizacion": "2024-10-11"
+            }
+        },
+        {
+            "id_producto": 44,
+            "id_tipo_prod": 11,
+            "Nombre_Producto": "Cognac Napoléon",
+            "Descripcion": "Cognac de gran calidad y tradición",
+            "Precio": 1500.00,
+            "tipos_productos": {
+                "tipo": "Cognac"
+            },
+            "inventarios": {
+                "cantidad_disponible": 28,
+                "fecha_actualizacion": "2024-10-11"
+            }
+        },
+        {
+            "id_producto": 45,
+            "id_tipo_prod": 12,
+            "Nombre_Producto": "Brandy Solera",
+            "Descripcion": "Brandy elaborado en el sistema de soleras",
+            "Precio": 300.00,
+            "tipos_productos": {
+                "tipo": "Brandy"
+            },
+            "inventarios": {
+                "cantidad_disponible": 18,
+                "fecha_actualizacion": "2024-10-12"
+            }
+        },
+        {
+            "id_producto": 46,
+            "id_tipo_prod": 12,
+            "Nombre_Producto": "Brandy Imperial",
+            "Descripcion": "Brandy de alta gama",
+            "Precio": 500.00,
+            "tipos_productos": {
+                "tipo": "Brandy"
+            },
+            "inventarios": {
+                "cantidad_disponible": 18,
+                "fecha_actualizacion": "2024-10-12"
+            }
+        },
+        {
+            "id_producto": 47,
+            "id_tipo_prod": 12,
+            "Nombre_Producto": "Brandy Jerezano",
+            "Descripcion": "Brandy elaborado en la región de Jerez",
+            "Precio": 350.00,
+            "tipos_productos": {
+                "tipo": "Brandy"
+            },
+            "inventarios": {
+                "cantidad_disponible": 18,
+                "fecha_actualizacion": "2024-10-12"
+            }
+        },
+        {
+            "id_producto": 48,
+            "id_tipo_prod": 12,
+            "Nombre_Producto": "Brandy Gran Reserva",
+            "Descripcion": "Brandy añejado por más de 5 años",
+            "Precio": 600.00,
+            "tipos_productos": {
+                "tipo": "Brandy"
+            },
+            "inventarios": {
+                "cantidad_disponible": 18,
+                "fecha_actualizacion": "2024-10-12"
+            }
+        },
+        {
+            "id_producto": 49,
+            "id_tipo_prod": 13,
+            "Nombre_Producto": "Mezcal Joven",
+            "Descripcion": "Mezcal sin añejamiento, con notas ahumadas",
+            "Precio": 350.00,
+            "tipos_productos": {
+                "tipo": "Mezcal"
+            },
+            "inventarios": {
+                "cantidad_disponible": 55,
+                "fecha_actualizacion": "2024-10-13"
+            }
+        },
+        {
+            "id_producto": 50,
+            "id_tipo_prod": 13,
+            "Nombre_Producto": "Mezcal Reposado",
+            "Descripcion": "Mezcal con reposo en barrica por 2 meses",
+            "Precio": 450.00,
+            "tipos_productos": {
+                "tipo": "Mezcal"
+            },
+            "inventarios": {
+                "cantidad_disponible": 55,
+                "fecha_actualizacion": "2024-10-13"
+            }
+        },
+        {
+            "id_producto": 51,
+            "id_tipo_prod": 13,
+            "Nombre_Producto": "Mezcal Añejo",
+            "Descripcion": "Mezcal añejado por más de 1 año",
+            "Precio": 600.00,
+            "tipos_productos": {
+                "tipo": "Mezcal"
+            },
+            "inventarios": {
+                "cantidad_disponible": 55,
+                "fecha_actualizacion": "2024-10-13"
+            }
+        },
+        {
+            "id_producto": 52,
+            "id_tipo_prod": 13,
+            "Nombre_Producto": "Mezcal Artesanal",
+            "Descripcion": "Mezcal elaborado con técnicas tradicionales",
+            "Precio": 500.00,
+            "tipos_productos": {
+                "tipo": "Mezcal"
+            },
+            "inventarios": {
+                "cantidad_disponible": 55,
+                "fecha_actualizacion": "2024-10-13"
+            }
+        },
+        {
+            "id_producto": 53,
+            "id_tipo_prod": 14,
+            "Nombre_Producto": "Sake Junmai",
+            "Descripcion": "Sake puro de arroz sin aditivos",
+            "Precio": 300.00,
+            "tipos_productos": {
+                "tipo": "Sake"
+            },
+            "inventarios": {
+                "cantidad_disponible": 60,
+                "fecha_actualizacion": "2024-10-14"
+            }
+        },
+        {
+            "id_producto": 54,
+            "id_tipo_prod": 14,
+            "Nombre_Producto": "Sake Nigori",
+            "Descripcion": "Sake sin filtrar, ligeramente dulce",
+            "Precio": 350.00,
+            "tipos_productos": {
+                "tipo": "Sake"
+            },
+            "inventarios": {
+                "cantidad_disponible": 60,
+                "fecha_actualizacion": "2024-10-14"
+            }
+        },
+        {
+            "id_producto": 55,
+            "id_tipo_prod": 14,
+            "Nombre_Producto": "Sake Daiginjo",
+            "Descripcion": "Sake premium con un proceso de pulido del arroz",
+            "Precio": 500.00,
+            "tipos_productos": {
+                "tipo": "Sake"
+            },
+            "inventarios": {
+                "cantidad_disponible": 60,
+                "fecha_actualizacion": "2024-10-14"
+            }
+        },
+        {
+            "id_producto": 56,
+            "id_tipo_prod": 14,
+            "Nombre_Producto": "Sake Genshu",
+            "Descripcion": "Sake fuerte sin diluir",
+            "Precio": 450.00,
+            "tipos_productos": {
+                "tipo": "Sake"
+            },
+            "inventarios": {
+                "cantidad_disponible": 60,
+                "fecha_actualizacion": "2024-10-14"
+            }
+        },
+        {
+            "id_producto": 57,
+            "id_tipo_prod": 15,
+            "Nombre_Producto": "Licor de Café",
+            "Descripcion": "Licor con base de café tostado",
+            "Precio": 200.00,
+            "tipos_productos": {
+                "tipo": "Licores"
+            },
+            "inventarios": {
+                "cantidad_disponible": 45,
+                "fecha_actualizacion": "2024-10-15"
+            }
+        },
+        {
+            "id_producto": 58,
+            "id_tipo_prod": 15,
+            "Nombre_Producto": "Licor de Almendra",
+            "Descripcion": "Licor dulce con sabor a almendra",
+            "Precio": 220.00,
+            "tipos_productos": {
+                "tipo": "Licores"
+            },
+            "inventarios": {
+                "cantidad_disponible": 45,
+                "fecha_actualizacion": "2024-10-15"
+            }
+        },
+        {
+            "id_producto": 59,
+            "id_tipo_prod": 15,
+            "Nombre_Producto": "Licor de Naranja",
+            "Descripcion": "Licor con un toque cítrico de naranja",
+            "Precio": 250.00,
+            "tipos_productos": {
+                "tipo": "Licores"
+            },
+            "inventarios": {
+                "cantidad_disponible": 45,
+                "fecha_actualizacion": "2024-10-15"
+            }
+        },
+        {
+            "id_producto": 60,
+            "id_tipo_prod": 15,
+            "Nombre_Producto": "Licor de Hierbas",
+            "Descripcion": "Licor con mezcla de hierbas aromáticas",
+            "Precio": 270.00,
+            "tipos_productos": {
+                "tipo": "Licores"
+            },
+            "inventarios": {
+                "cantidad_disponible": 45,
+                "fecha_actualizacion": "2024-10-15"
+            }
+        },
+        {
+            "id_producto": 61,
+            "id_tipo_prod": 16,
+            "Nombre_Producto": "Sidra Natural",
+            "Descripcion": "Sidra fermentada de manera tradicional",
+            "Precio": 120.00,
+            "tipos_productos": {
+                "tipo": "Sidra"
+            },
+            "inventarios": {
+                "cantidad_disponible": 30,
+                "fecha_actualizacion": "2024-10-16"
+            }
+        },
+        {
+            "id_producto": 62,
+            "id_tipo_prod": 16,
+            "Nombre_Producto": "Sidra Espumosa",
+            "Descripcion": "Sidra con burbujas ligeras",
+            "Precio": 150.00,
+            "tipos_productos": {
+                "tipo": "Sidra"
+            },
+            "inventarios": {
+                "cantidad_disponible": 30,
+                "fecha_actualizacion": "2024-10-16"
+            }
+        },
+        {
+            "id_producto": 63,
+            "id_tipo_prod": 16,
+            "Nombre_Producto": "Sidra Dulce",
+            "Descripcion": "Sidra con un toque dulce",
+            "Precio": 140.00,
+            "tipos_productos": {
+                "tipo": "Sidra"
+            },
+            "inventarios": {
+                "cantidad_disponible": 30,
+                "fecha_actualizacion": "2024-10-16"
+            }
+        },
+        {
+            "id_producto": 64,
+            "id_tipo_prod": 16,
+            "Nombre_Producto": "Sidra Semi-Seca",
+            "Descripcion": "Sidra balanceada entre dulce y seco",
+            "Precio": 160.00,
+            "tipos_productos": {
+                "tipo": "Sidra"
+            },
+            "inventarios": {
+                "cantidad_disponible": 30,
+                "fecha_actualizacion": "2024-10-16"
+            }
+        },
+        {
+            "id_producto": 65,
+            "id_tipo_prod": 17,
+            "Nombre_Producto": "Vermouth Rojo",
+            "Descripcion": "Vermouth con toques de hierbas y especias",
+            "Precio": 200.00,
+            "tipos_productos": {
+                "tipo": "Vermouth"
+            },
+            "inventarios": {
+                "cantidad_disponible": 70,
+                "fecha_actualizacion": "2024-10-17"
+            }
+        },
+        {
+            "id_producto": 66,
+            "id_tipo_prod": 17,
+            "Nombre_Producto": "Vermouth Blanco",
+            "Descripcion": "Vermouth seco y ligeramente dulce",
+            "Precio": 220.00,
+            "tipos_productos": {
+                "tipo": "Vermouth"
+            },
+            "inventarios": {
+                "cantidad_disponible": 70,
+                "fecha_actualizacion": "2024-10-17"
+            }
+        },
+        {
+            "id_producto": 67,
+            "id_tipo_prod": 17,
+            "Nombre_Producto": "Vermouth Rosado",
+            "Descripcion": "Vermouth con notas frutales y herbales",
+            "Precio": 210.00,
+            "tipos_productos": {
+                "tipo": "Vermouth"
+            },
+            "inventarios": {
+                "cantidad_disponible": 70,
+                "fecha_actualizacion": "2024-10-17"
+            }
+        },
+        {
+            "id_producto": 68,
+            "id_tipo_prod": 17,
+            "Nombre_Producto": "Vermouth Seco",
+            "Descripcion": "Vermouth con un final seco y amargo",
+            "Precio": 230.00,
+            "tipos_productos": {
+                "tipo": "Vermouth"
+            },
+            "inventarios": {
+                "cantidad_disponible": 70,
+                "fecha_actualizacion": "2024-10-17"
+            }
+        },
+        {
+            "id_producto": 69,
+            "id_tipo_prod": 18,
+            "Nombre_Producto": "Anís Dulce",
+            "Descripcion": "Anís con un sabor dulce y suave",
+            "Precio": 150.00,
+            "tipos_productos": {
+                "tipo": "Anís"
+            },
+            "inventarios": {
+                "cantidad_disponible": 60,
+                "fecha_actualizacion": "2024-10-18"
+            }
+        },
+        {
+            "id_producto": 70,
+            "id_tipo_prod": 18,
+            "Nombre_Producto": "Anís Seco",
+            "Descripcion": "Anís con un sabor fuerte y seco",
+            "Precio": 180.00,
+            "tipos_productos": {
+                "tipo": "Anís"
+            },
+            "inventarios": {
+                "cantidad_disponible": 60,
+                "fecha_actualizacion": "2024-10-18"
+            }
+        },
+        {
+            "id_producto": 71,
+            "id_tipo_prod": 18,
+            "Nombre_Producto": "Anís Estrellado",
+            "Descripcion": "Licor de anís con toques de especias",
+            "Precio": 200.00,
+            "tipos_productos": {
+                "tipo": "Anís"
+            },
+            "inventarios": {
+                "cantidad_disponible": 60,
+                "fecha_actualizacion": "2024-10-18"
+            }
+        },
+        {
+            "id_producto": 72,
+            "id_tipo_prod": 18,
+            "Nombre_Producto": "Anís Aromático",
+            "Descripcion": "Anís con notas intensas y dulces",
+            "Precio": 170.00,
+            "tipos_productos": {
+                "tipo": "Anís"
+            },
+            "inventarios": {
+                "cantidad_disponible": 60,
+                "fecha_actualizacion": "2024-10-18"
+            }
+        },
+        {
+            "id_producto": 73,
+            "id_tipo_prod": 19,
+            "Nombre_Producto": "Absenta Verde",
+            "Descripcion": "Licor con alto contenido de ajenjo",
+            "Precio": 400.00,
+            "tipos_productos": {
+                "tipo": "Absenta"
+            },
+            "inventarios": {
+                "cantidad_disponible": 50,
+                "fecha_actualizacion": "2024-10-19"
+            }
+        },
+        {
+            "id_producto": 74,
+            "id_tipo_prod": 19,
+            "Nombre_Producto": "Absenta Blanca",
+            "Descripcion": "Licor claro con sabor intenso a hierbas",
+            "Precio": 450.00,
+            "tipos_productos": {
+                "tipo": "Absenta"
+            },
+            "inventarios": {
+                "cantidad_disponible": 50,
+                "fecha_actualizacion": "2024-10-19"
+            }
+        },
+        {
+            "id_producto": 75,
+            "id_tipo_prod": 19,
+            "Nombre_Producto": "Absenta Roja",
+            "Descripcion": "Licor con un toque de granadina y ajenjo",
+            "Precio": 420.00,
+            "tipos_productos": {
+                "tipo": "Absenta"
+            },
+            "inventarios": {
+                "cantidad_disponible": 50,
+                "fecha_actualizacion": "2024-10-19"
+            }
+        },
+        {
+            "id_producto": 76,
+            "id_tipo_prod": 19,
+            "Nombre_Producto": "Absenta Negra",
+            "Descripcion": "Absenta con una mezcla de ajenjo y regaliz",
+            "Precio": 500.00,
+            "tipos_productos": {
+                "tipo": "Absenta"
+            },
+            "inventarios": {
+                "cantidad_disponible": 50,
+                "fecha_actualizacion": "2024-10-19"
+            }
+        },
+        {
+            "id_producto": 77,
+            "id_tipo_prod": 20,
+            "Nombre_Producto": "Licor de Crema de Whisky",
+            "Descripcion": "Licor con mezcla de crema y whisky",
+            "Precio": 300.00,
+            "tipos_productos": {
+                "tipo": "Licor de Crema"
+            },
+            "inventarios": {
+                "cantidad_disponible": 40,
+                "fecha_actualizacion": "2024-10-20"
+            }
+        },
+        {
+            "id_producto": 78,
+            "id_tipo_prod": 20,
+            "Nombre_Producto": "Licor de Crema de Café",
+            "Descripcion": "Licor cremoso con sabor a café",
+            "Precio": 280.00,
+            "tipos_productos": {
+                "tipo": "Licor de Crema"
+            },
+            "inventarios": {
+                "cantidad_disponible": 40,
+                "fecha_actualizacion": "2024-10-20"
+            }
+        },
+        {
+            "id_producto": 79,
+            "id_tipo_prod": 20,
+            "Nombre_Producto": "Licor de Crema de Fresa",
+            "Descripcion": "Licor con mezcla de crema y fresas",
+            "Precio": 250.00,
+            "tipos_productos": {
+                "tipo": "Licor de Crema"
+            },
+            "inventarios": {
+                "cantidad_disponible": 40,
+                "fecha_actualizacion": "2024-10-20"
+            }
+        },
+        {
+            "id_producto": 80,
+            "id_tipo_prod": 20,
+            "Nombre_Producto": "Licor de Crema de Vainilla",
+            "Descripcion": "Licor cremoso con sabor a vainilla",
+            "Precio": 270.00,
+            "tipos_productos": {
+                "tipo": "Licor de Crema"
+            },
+            "inventarios": {
+                "cantidad_disponible": 40,
+                "fecha_actualizacion": "2024-10-20"
+            }
+        }
+    ]
+)
